@@ -30,11 +30,17 @@
             android:layout_height="wrap_content"
             android:src="@drawable/hootel" />
 
-        <EditText
-            android:id="@+id/editTextnama"
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Nama" />
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTextnama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama" />
+
+        </android.support.design.widget.TextInputLayout>
 
         <TextView
             android:id="@+id/textView"
@@ -114,16 +120,16 @@
             android:layout_height="wrap_content" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonOk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="New Button" />
+            android:text="OK" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textViewHasil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Text" />
+            android:text="Hasil" />
     </LinearLayout>
 </ScrollView>
