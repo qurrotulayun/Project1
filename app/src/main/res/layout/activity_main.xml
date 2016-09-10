@@ -46,7 +46,7 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hari/Malam" />
+            android:text="Lama Menginap" />
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -112,12 +112,13 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Jenis Kamar" />
+            android:text="Tipe Kamar" />
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/spinnerJenis"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:entries="@array/jenis" />
 
         <Button
             android:id="@+id/buttonOk"
