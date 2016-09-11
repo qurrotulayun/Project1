@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
         String nama = etNama.getText().toString();
         String hasil = null;
-        String cb = "Anda Memilih Fasilitas : \n   ";
+        String cb = "Anda Memilih Fasilitas : \n";
 
         if (rb1.isChecked()) {
             hasil = rb1.getText().toString();
@@ -59,13 +59,13 @@ public class MainActivity extends AppCompatActivity {
             hasil = rb3.getText().toString();
         }
 
-        if (cbSp.isChecked()) cb += cbSp.getText() + "\n   ";
-        if (cbSpa.isChecked()) cb += cbSpa.getText() + "\n   ";
-        if (cbAj.isChecked()) cb += cbAj.getText() + "\n  ";
-        if (cbFc.isChecked()) cb += cbFc.getText();
+        if (cbSp.isChecked()) cb += cbSp.getText() + "   \n";
+        if (cbSpa.isChecked()) cb += cbSpa.getText() + "   \n";
+        if (cbAj.isChecked()) cb += cbAj.getText() + "   \n";
+        if (cbFc.isChecked()) cb += cbFc.getText() + ("   \n");
 
         tvHasil.setText("Anda bernama " + nama + " \nAnda memesan kamar untuk " + hasil
-                + "\n" + cb + "\nAnda Memilih tipe kamar " + spJenis.getSelectedItem().toString());
+                + "\n" + cb + "Anda Memilih tipe kamar " + spJenis.getSelectedItem().toString());
 
 
     }

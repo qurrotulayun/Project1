@@ -7,17 +7,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+        android:background="#f8e1ec"
         android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
         android:weightSum="1"
-    tools:context="id.sch.smktelkom_mlg.tugas01.xirpl6030.project1.MainActivity">
+        tools:context="id.sch.smktelkom_mlg.tugas01.xirpl6030.project1.MainActivity">
 
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="341dp"
+            android:layout_width="352dp"
             android:layout_height="wrap_content"
             android:text="Booking Hotel Indah"
             android:textAppearance="?android:attr/textAppearanceLarge"
@@ -26,9 +27,10 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="355dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/hootel" />
+            android:layout_width="347dp"
+            android:layout_height="99dp"
+            android:layout_weight="0.25"
+            android:src="@drawable/hooo" />
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
@@ -46,7 +48,8 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lama Menginap" />
+            android:text="Lama Menginap"
+            android:textColor="@color/colorPrimary" />
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -57,80 +60,97 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:text="1 Malam" />
+                android:text="1 Malam"
+                android:textColor="@color/accent_material_light" />
 
             <RadioButton
                 android:id="@+id/radioButton2mlm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:text="2 Malam" />
+                android:text="2 Malam"
+                android:textColor="@color/accent_material_light" />
 
             <RadioButton
                 android:id="@+id/radioButton3mlm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:text="3 Malam" />
+                android:text="3 Malam"
+                android:textColor="@color/accent_material_light" />
         </RadioGroup>
 
     <TextView
         android:id="@+id/textViewFasilitas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fasilitas" />
+        android:text="Fasilitas"
+        android:textColor="@color/colorPrimary" />
 
         <CheckBox
             android:id="@+id/checkBoxSarapan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
-            android:text="Sarapan" />
+            android:text="Sarapan"
+            android:textColor="@color/accent_material_light" />
 
         <CheckBox
             android:id="@+id/checkBoxSPA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
-            android:text="SPA" />
+            android:text="SPA"
+            android:textColor="@color/accent_material_light" />
 
         <CheckBox
             android:id="@+id/checkBoxAJ"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
-            android:text="Antar Jemput" />
+            android:text="Antar Jemput"
+            android:textColor="@color/accent_material_light" />
 
         <CheckBox
             android:id="@+id/checkBoxFC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
-            android:text=" Fitness centre" />
+            android:text=" Fitness centre"
+            android:textColor="@color/accent_material_light" />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tipe Kamar" />
+            android:text="Tipe Kamar"
+            android:textColor="@color/colorPrimary" />
 
         <Spinner
             android:id="@+id/spinnerJenis"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:entries="@array/jenis" />
+            android:layout_marginBottom="12dp"
+            android:background="@color/colorAccent"
+            android:entries="@array/jenis"
+            android:transitionGroup="false" />
 
         <Button
             android:id="@+id/buttonOk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="OK" />
+            android:layout_marginTop="10dp"
+            android:background="#d78087"
+            android:text="OK"
+            android:textColor="#ffffff" />
 
         <TextView
             android:id="@+id/textViewHasil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hasil" />
+            android:text="Hasil"
+            android:textColor="#000000"
+            android:textSize="15dp" />
     </LinearLayout>
 </ScrollView>
